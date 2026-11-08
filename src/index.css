@@ -1,0 +1,41 @@
+@import "@fontsource/montserrat";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/libre-caslon-text";
+@import "@fontsource/source-serif-4";
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-libre: "Libre Caslon Text", serif;
+  --font-source: "Source Serif 4", serif;
+  --animate-toast-in: toast-in 180ms ease-out;
+  --color-surface: #f5f1e8;
+  --color-surface-container-low: #f5f1e8;
+  --color-surface-container-high: #e9e3d7;
+  --color-surface-container-highest: #e8e2d5;
+  --color-primary: #1f5c45;
+  --color-primary-container: #1f5c45;
+  --color-primary-fixed: #1f5c45;
+  --color-primary-fixed-dim: #1f5c45;
+  --color-on-primary: #f5f1e8;
+  --color-on-primary-container: #e2eee6;
+  --color-on-primary-accent: #c79a3b;
+  --color-secondary: #c79a3b;
+  --color-secondary-fixed-dim: #c79a3b;
+  --color-secondary-container: #e4d3a9;
+  --color-tertiary: #2a2825;
+  --color-on-tertiary: #f5f1e8;
+  --color-tertiary-fixed-dim: #c7c0b3;
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
